@@ -1,0 +1,104 @@
+/* Contenedor principal */
+.contenedor {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para efecto casi 3D */
+    border-radius: 15px; /* Bordes redondeados más suaves */
+    overflow: hidden;
+}
+
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 3em 0; /* Más espacio para un diseño más limpio */
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Sombra para el encabezado */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra en el texto para efecto moderno */
+}
+
+/* Estilos de la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para los enlaces */
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px); /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+}
+
+/* Estilos para párrafos */
+p {
+    margin: 25px 0;
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra interna para un efecto sutil */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Botones modernos */
+button {
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para efecto casi 3D */
+}
+
+button:hover {
+    background: #6a11cb;
+    transform: translateY(-3px); /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+}
